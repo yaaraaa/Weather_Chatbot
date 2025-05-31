@@ -22,7 +22,7 @@ def search_knowledge_base(
     """
     Searches a vector-based knowledge base for the most relevant entries based on a text query and metadata filters.
     """
-    
+
     top_k = int(top_k)
 
     client = DatabaseClient.get_instance(

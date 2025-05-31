@@ -1,6 +1,7 @@
 import streamlit as st
 from document_processor.api import upload_file_to_backend
 
+
 def render_document_processor_page():
     """Renders the themed document upload page for the assistant."""
 
@@ -9,7 +10,7 @@ def render_document_processor_page():
         "Upload your **travel guide** so the assistant can give smarter, context-aware answers."
     )
 
-    st.image("./Frontend/assets/banner.jpg", use_container_width=True)  
+    st.image("./Frontend/assets/banner.jpg", use_container_width=True)
     uploaded_file = st.file_uploader("Upload a file file", type=["pdf", "docx", "txt"])
 
     if uploaded_file is not None and st.button("Upload & Process"):

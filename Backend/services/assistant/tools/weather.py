@@ -8,6 +8,6 @@ def get_weather_info(
     location: Annotated[str, "The location that the user has provided."],
 ) -> str:
     """Retrieves the current weather conditions for the given location"""
-    
+
     weather = OpenWeatherMapAPIWrapper()
     return weather.run(location)

@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
 def main():
     """Main entry point for the Streamlit app with sidebar navigation between pages."""
 

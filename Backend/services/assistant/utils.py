@@ -1,4 +1,5 @@
 from IPython.display import Image, display
+
 # from Backend.services.assistant.graph.builder import build_graph
 # from Backend.services.assistant.utils import display_graph
 
@@ -13,7 +14,6 @@ def display_graph(graph):
         display(Image(data=image_bytes))
     except Exception as e:
         print("Error rendering or saving graph:", e)
-
 
 
 # app = build_graph()
