@@ -20,7 +20,7 @@ The assistant performs four main tasks:
 4. **Vector Search**  
    The assistant performs search on vector embedded documents, filtered by weather category and country, to retrieve the most relevant content.
 ---
-#### 📊 System Architecture
+#### System Architecture
 
 _A diagram visualizing the overall system architecture of the chatbot._
 ![Blank diagram (9)](https://github.com/user-attachments/assets/e2b7acfa-9ef7-4a74-9c4f-89158c5f9765)
@@ -100,7 +100,7 @@ A key conditional transition occurs **after weather fetch**. The function `route
 - If the user only asked for weather → go to `generate_weather_only_response`, where a user friendly weather report is provided.
 - Otherwise → continue to `classify_weather` → `retrieve_documents` → `generate_response`, where a recommendation on activities or what to wear given a location and a certain weather condition is provided.
 
-#### 📊 Visual Diagram
+#### Visual Diagram
 
 _A diagram visualizing the LangGraph state machine and transitions between nodes will be included here for better clarity._
 
