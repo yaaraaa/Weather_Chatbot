@@ -5,13 +5,13 @@ from document_processor.api import upload_file_to_backend
 def render_document_processor_page():
     """Renders the themed document upload page for the assistant."""
 
-    st.title("Upload Your Travel Documents")
+    st.title("Upload Your Travel Document")
     st.markdown(
         "Upload your **travel guide** so the assistant can give smarter, context-aware answers."
     )
 
     st.image("./Frontend/assets/banner.jpg", use_container_width=True)
-    uploaded_file = st.file_uploader("Upload a file", type=["pdf", "docx", "txt"])
+    uploaded_file = st.file_uploader("", type=["pdf"])
 
     if uploaded_file is not None and st.button("Upload & Process"):
         with st.spinner("Processing your document..."):
