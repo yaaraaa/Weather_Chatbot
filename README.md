@@ -99,7 +99,7 @@ A key conditional transition occurs **after weather fetch**. The function `route
 
 _A diagram visualizing the LangGraph state machine and transitions between nodes will be included here for better clarity._
 
-![image info](./graph.png)
+![graph](https://github.com/user-attachments/assets/e0731747-8bbe-4b35-9eeb-b07977977ef8)
 
 ---
 
